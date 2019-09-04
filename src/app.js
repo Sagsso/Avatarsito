@@ -13,3 +13,6 @@ function changeWeaponColor(e){
 function changeClotheColor(e){
     player.character.clothes = e.target.value;
 }
+function changeClotheColor(e){
+    player.character.hat = e.target.value;
+}

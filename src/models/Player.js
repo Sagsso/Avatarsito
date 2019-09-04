@@ -3,7 +3,7 @@ class Player extends DOMGui{
     constructor(username, params = undefined) {
         super();
         this._username = username || '';
-        this.character = new Character({weapon: '.weapon', rolClass: '#svg', clothes: '.clothes'});
+        this.character = new Character({weapon: '.weapon', rolClass: '#svg', clothes: '.clothes', hat:'.hat'});
         this._DOMElements = {
             username: undefined
         }

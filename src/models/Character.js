@@ -8,7 +8,8 @@ class Character extends DOMGui {
         this._DOMElements = {
             rolClass: undefined,
             weapon: undefined,
-            clothes: undefined
+            clothes: undefined,
+            hat: undefined
         }
         this.setDOMElements(params);
     }
@@ -41,6 +42,24 @@ class Character extends DOMGui {
         return this._clothes;
     }
 
+    set hat(value) {
+        this._hat = value;
+
+        console.log('selector', `#${this._rolClass} ${this._DOMElements.hat}`);
+
+        let hat = document.querySelectorAll(`#${this._rolClass} ${this._DOMElements.hat}`);
+
+        hat.forEach(element => {
+            element.style.fill = this.hat;
+        });
+
+    }
+    
+
+    get hat() {
+        return this._hat;
+    }
+
     set rolClass(value) {
         this._rolClass = value;
         let svg = document.querySelector(this._DOMElements.rolClass);
@@ -53,6 +72,7 @@ class Character extends DOMGui {
         }
         this.weapon = this._weapon;
         this.clothes = this._clothes;
+        this.hat = this._hat;
 
     }
 

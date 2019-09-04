@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Avatarsito</title>
+    <title>RPWeb</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="src/models/DOMGui.js"></script>
     <script src="src/models/Character.js"></script>
@@ -38,6 +38,11 @@
                 <input type="color" onchange="player.character.clothes = event.target.value">
 
             </div>
+            <div class="formElement row">
+                <label for="">Hat Color:</label>
+                <input type="color" onchange="player.character.hat = event.target.value">
+
+            </div>
         </div>
         <div id="content">
             <div class="username">
@@ -52,6 +57,8 @@
                         d="M231.099,172.5c-10.295,0-18.766,7.781-19.87,17.782L177.501,494.5h93.598v-322H231.099z" />
                     <path class="clothes" style="fill:#1653CA;"
                         d="M360.97,190.282c-1.105-10.001-9.575-17.782-19.87-17.782h-30l53.402,322h30L360.97,190.282z" />
+                    <path style="fill:rgba(0, 0, 0, 0.205);"
+                        d="M360.97,190.282c-1.105-10.001-9.575-17.782-19.87-17.782h-30l53.402,322h30L360.97,190.282z" />
                     <path class="clothes" style="fill:#186DD7;"
                         d="M311.099,172.5h-10v322h63.402L330.97,190.282C329.865,180.281,321.394,172.5,311.099,172.5z" />
                     <path style="fill:#C8C8C8;" d="M300.871,97.5l-15,135c24.853,0,45-20.147,45-45v-90H300.871z" />
@@ -59,9 +66,10 @@
                         d="M240.871,97.5v90c0,24.853,20.147,45,45,45c8.284,0,15-20.147,15-45v-90H240.871z" />
                     <path style="fill:#FDA181;" d="M286.129,52.5v90c24.853,0,45-20.147,45-45l-0.258-15L286.129,52.5z" />
                     <path style="fill:#FDC0AB;" d="M286.129,52.5l-45.258,30l0.258,15c0,24.853,20.147,45,45,45c8.284,0,15-20.147,15-45
-                	S294.413,52.5,286.129,52.5z" />
-                    <polygon style="fill:#186DD7;" points="285.871,7.5 285.871,59.398 301.099,82.5 331.099,82.5 " />
-                    <polygon style="fill:#1A93EA;" points="241.099,82.5 301.099,82.5 285.871,7.5 " />
+                    S294.413,52.5,286.129,52.5z" />
+                    <polygon class="hat" style="fill:#186DD7;" points="285.871,7.5 285.871,59.398 301.099,82.5 331.099,82.5 " />
+                    <polygon style="fill:rgba(0, 0, 0, 0.205);" points="285.871,7.5 285.871,59.398 301.099,82.5 331.099,82.5 " />
+                    <polygon class="hat" style="fill:#1A93EA;" points="241.099,82.5 301.099,82.5 285.871,7.5 " />
                     <path class="weapon" style="fill:#8FDBFD;" d="M162.501,27.5l-15-20l-15,20l-7.5,38.565c0,12.427,10.074,22.5,22.5,22.5s22.5-10.073,22.5-22.5
                 	L162.501,27.5z" />
                     <path
@@ -128,9 +136,11 @@
                         d="M332.745,172.5h-30l20,120h30v-100C352.745,181.454,343.791,172.5,332.745,172.5z" />
                     <path style="fill:#8DC051;" d="M302.745,172.5h-20c-11.046,0-20,8.954-20,20v100h60v-100
                 	C322.745,181.454,313.791,172.5,302.745,172.5z" />
-                    <path style="fill:#FDC0AB;"
+                    <path class="hat"style= "fill:#FDC0AB;"
                         d="M307.745,52.5v101l45-46v-10C352.745,72.647,332.598,52.5,307.745,52.5z" />
-                    <path style="fill:#FDDFD3;"
+                    <path style= "fill: rgba(0, 0, 0, 0.205);"
+                        d="M307.745,52.5v101l45-46v-10C352.745,72.647,332.598,52.5,307.745,52.5z" />
+                    <path class="hat"style= "fill:#FDDFD3;"
                         d="M307.745,52.5c-24.853,0-45,20.147-45,45v10l60,46v-56C322.745,72.647,316.029,52.5,307.745,52.5z" />
                     <path style="fill:#E34339;" d="M326.454,107.5c-1.053-1.573-2.303-3.002-3.709-4.261l-15,69.261c24.853,0,45-20.147,45-45v-20
                 	H326.454z" />
@@ -141,6 +151,8 @@
                     <path class="clothes" style="fill:#84473C;"
                         d="M292.745,172.499h-40c-10.295,0-18.766,7.781-19.87,17.782l-30.13,269.218h90V172.499z" />
                     <path class="clothes" style="fill:#743225;"
+                        d="M382.615,190.282c-1.105-10.001-9.575-17.782-19.87-17.782h-30l49.544,287h30L382.615,190.282z" />
+                    <path style="fill:rgba(0, 0, 0, 0.205);"
                         d="M382.615,190.282c-1.105-10.001-9.575-17.782-19.87-17.782h-30l49.544,287h30L382.615,190.282z" />
                     <path class="clothes" style="fill:#84473C;"
                         d="M352.615,190.282c-1.105-10.001-9.575-17.782-19.87-17.782h-10v287h59.544L352.615,190.282z" />
